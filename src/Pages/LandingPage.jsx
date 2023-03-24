@@ -1,5 +1,6 @@
-import { Box, Button, HStack, Heading, Highlight, Image, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Highlight, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons';
+import { servicesBox } from "../Data/data";
 
 const headingStyle = {
     fontWeight:600,
@@ -83,7 +84,37 @@ export default function LandingPage() {
                 </HStack>
                 <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top='-12.1px' left='116.8px' />
             </Box>
-
+            <Box w='588px' border={'1px solid #d9d8d6'} m='36.36px auto'></Box>
+            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px'>
+                {
+                    servicesBox?.map((el, i) => (
+                        <HStack 
+                            key={i} 
+                            box-sizing= 'border-box'
+                            width='270px'
+                            height= '95px'
+                            borderRadius= '5px'
+                            bgColor={el.bgColor}
+                            border={el.border}
+                            p='26px 35px'
+                        >
+                            <Box display={'flex'} justifyContent={'center'} alignItems={'center'} background={el.background} p='8px' w='40px' h='40px' borderRadius={'8px'}>
+                                <Image src={el.image} alt={el.image} w='24px' h='24px' />
+                            </Box>
+                            <Text textAlign={'left'} w='137px'>
+                                {el.text}
+                            </Text>
+                        </HStack>
+                    ) )
+                }
+            </SimpleGrid>
+            <Box w='full' bgColor={'#0566D4'}>
+                <SimpleGrid>
+                    {
+                        
+                    }
+                </SimpleGrid>
+            </Box>
         </Box>
     )
 };
