@@ -37,8 +37,8 @@ export default function LandingPage() {
         <Box pt={'95px'} textAlign={'center'}>
             <Text style={headingStyle} textAlign={'center'}>WELCOME TO CREATIVE PROXIES</Text>
             <Heading style={headingStyle2}>We are the <Highlight query='Fastest' styles={{color:'#077BFF'}}>Fastest</Highlight> and the <Highlight query='Most' styles={{color:'#16D113'}}>Most</Highlight> <Highlight query='Reliable' styles={{color:'#16D113'}}>Reliable</Highlight> Proxy Service since 2020</Heading>
-            <Image src={'blueStar.svg'} pos={'absolute'} top='192px' left='808px' />
-            <Image src={'greenStar.svg'} pos={'absolute'} top='265px' left='532px' />
+            <Image src={'blueStar.svg'} pos={'absolute'} top='192px' left='800px' />
+            <Image src={'greenStar.svg'} pos={'absolute'} top='265px' left='523px' />
             <Text style={bodyStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Button 
                 w='222px' 
@@ -68,19 +68,20 @@ export default function LandingPage() {
                         <Image src={'Star.svg'} alt="star" />
                     </Box>
                     <Box bgColor={'#00B67A'} w='28.31px' h='28.31px' px='4.25px' py='4.78px'>
-                        <Image src={'Star.svg'} alt="star" />
+                        <Image src={'Star.svg'} alt="star" zIndex={10} pos={'relative'} />
+                        <Box w='12px' h='28.31px' bgColor={'#dcdce6'} pos='relative' top='-19px' left='8px'></Box>
                     </Box>
                 </HStack>
-                <HStack mx='16px' gap='0'>
-                    <Text style={{headingStyle, opacity:1}}>
+                <HStack mx='16px' gap='0' mt='9px'>
+                    <Text style={{headingStyle, opacity:1, fontSize:'14.5px'}}>
                         Rated 4.5 on 
                     </Text>
                     <Image src={'greenRatingStar.svg'} alt="star" w='23.23px' />
-                    <Text style={{headingStyle, opacity:1}}>
+                    <Text style={{headingStyle, opacity:1, fontSize:'14.5px', paddingTop:'5px'}}>
                         Trustpilot
                     </Text>
                 </HStack>
-                <Image src={'greenStarMark.svg'} alt='mark on green star' pos='absolute' top='542.96px' left='969.62px' />
+                <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top='-12.1px' left='116.8px' />
             </Box>
 
         </Box>

@@ -19,26 +19,26 @@ const bodyStyle = {
 
 export default function Navbar() {
     return (
-        <Box p={'14px 10px'} borderBottom={'3px solid lightgray'} w={'full'}>
-            <HStack justifyContent={'space-between'}>
-                <HStack>
+        <Box p={'14px 10px'} borderBottom={'3px solid lightgray'} w={'full'} pos={'sticky'} top={0} zIndex={100} bgColor={'white'}>
+            <HStack justifyContent={'start'}>
+                <HStack mr='31px'>
                     <Image src={'creativeproxies.png'} alt='logo' />
                     <Heading style={headingStyle}>CreativeProxies</Heading>
                 </HStack>
-                <HStack alignItems={'center'} gap='30px'>
+                <HStack alignItems={'center'} gap='24px'>
                     <Text style={bodyStyle}>Pricing</Text>
                     <Text style={bodyStyle}>Exploring Tools <ChevronDownIcon /></Text>
                     <Text style={bodyStyle}>Resources <ChevronDownIcon /></Text>
                     <Text style={bodyStyle}>FAQs</Text>
                     <Text style={bodyStyle}>Blogs</Text>
                 </HStack>
-                <HStack>
+                <HStack pl='50px' pr='28px'>
                     <Image src={'discord.svg'} alt="discord" />
                     <Text style={{bodyStyle, color:'#5865F2'}}>Join Discord</Text>
                     <Box w='0px' h='31.5px' border={'1px solid #D9D8D6'}></Box>
                     <Text style={bodyStyle}>Log in</Text>
                 </HStack>
-                <Button p='10px 22px' borderRadius={'5px'} bgColor={'#077BFF'} color='white'>Get Started</Button>
+                <Button ml='50px' p='10px 22px' borderRadius={'5px'} bgColor={'#077BFF'} color='white'>Get Started</Button>
             </HStack>
         </Box>
     )
