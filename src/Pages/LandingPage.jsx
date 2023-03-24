@@ -108,12 +108,12 @@ export default function LandingPage() {
                         <HStack 
                             key={i} 
                             box-sizing= 'border-box'
-                            width='270px'
+                            width='254px'
                             height= '95px'
                             borderRadius= '5px'
                             bgColor={el.bgColor}
                             border={el.border}
-                            p='26px 35px'
+                            p='26px 32px'
                         >
                             <Box display={'flex'} justifyContent={'center'} alignItems={'center'} background={el.background} p='8px' w='40px' h='40px' borderRadius={'8px'}>
                                 <Image src={el.image} alt={el.image} w='24px' h='24px' />
@@ -128,21 +128,21 @@ export default function LandingPage() {
 
 
             {/* Features Box */}
-            <Box w='full' bgColor={'#0566D4'} p='115px 192px'>
+            <Box w='full' bgColor={'#0566D4'} p='115px 192px' mb="177px">
                 <Heading style={{featureHead,fontSize:'36px'}} color='#ffffff'>
                     Why we are the Best Proxy Providers
                 </Heading>
                 <Text style={{featureText, fontSize:'18px', opacity:0.5}} color='#ffffff' m='10px auto 30px auto' w='465px'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
                 </Text>
-                <SimpleGrid columns={{base:2, lg:4}} rowGap={'27px'} columnGap={'16px'} w='1148px'>
+                <SimpleGrid columns={{base:2, lg:4}} rowGap={'27px'} columnGap={'12px'} w='1148px'>
                     {
                         featureBox?.map((el, i)=> (
                             <VStack 
                                 border={'1px solid rgba(255, 255, 255, 0.25)'} 
-                                p='22px 25px' 
+                                p='22px 14px' 
                                 borderRadius={'5px'}
-                                w='274px'
+                                w='248px'
                                 h='160px'
                                 alignItems={'flex-start'}
                             >
@@ -156,6 +156,12 @@ export default function LandingPage() {
                     }
                 </SimpleGrid>
             </Box>
+            <Text fontSize={'36px'} fontWeight={600}>
+                <Highlight query={'Deliver!'} styles={{color:'#077BFF'}}>You choose, we Deliver!</Highlight>
+            </Text>
+            <Text style={{featureText, fontSize:'18px', opacity:0.5}} color='#111822' w='465px' m='auto' >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
+            </Text>
         </Box>
     )
 };
