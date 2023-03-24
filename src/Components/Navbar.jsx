@@ -19,7 +19,16 @@ const bodyStyle = {
 
 export default function Navbar() {
     return (
-        <Box p={'14px 10px'} borderBottom={'3px solid lightgray'} w={'full'} pos={'sticky'} top={0} zIndex={100} bgColor={'white'}>
+        <Box 
+            p={'14px 10px'} 
+            borderBottom={'3px solid lightgray'} 
+            w={'1118px'} 
+            pos={'sticky'} 
+            top={0} 
+            zIndex={100} 
+            bgColor={'white'}
+            m='0 192px'
+        >
             <HStack justifyContent={'start'}>
                 <HStack mr='31px'>
                     <Image src={'creativeproxies.png'} alt='logo' />

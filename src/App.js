@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <Box p={'0 192px'}>
+    <Box>
       <Navbar />
       <AllRoutes />
       <Footer />

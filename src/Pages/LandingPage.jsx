@@ -1,6 +1,6 @@
-import { Box, Button, HStack, Heading, Highlight, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Highlight, Image, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { servicesBox } from "../Data/data";
+import { featureBox, servicesBox } from "../Data/data";
 
 const headingStyle = {
     fontWeight:600,
@@ -33,6 +33,19 @@ const bodyStyle = {
     textAlign:'center'
 }
 
+const featureHead = {
+    fontWeight:600,
+    letterSpacing:'-0.02em',
+}
+
+const featureText = {
+    fontWeight:400,
+    fontSize:'14px',
+    lineHeight:'17px',
+    letterSpacing:'-0.02em',
+    opacity:0.5
+}
+
 export default function LandingPage() {
     return (
         <Box pt={'95px'} textAlign={'center'}>
@@ -53,6 +66,7 @@ export default function LandingPage() {
                 <ArrowForwardIcon />
             </Button>
             
+
             {/* Trustpilot Rating Box */}
             <Box background= 'rgba(0, 182, 122, 0.1)' borderRadius='10px' w='222px' h='90px' py='16px' m='22px auto'>
                 <HStack mx='35.5px'>
@@ -85,7 +99,10 @@ export default function LandingPage() {
                 <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top='-12.1px' left='116.8px' />
             </Box>
             <Box w='588px' border={'1px solid #d9d8d6'} m='36.36px auto'></Box>
-            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px'>
+
+
+            {/* Services Box */}
+            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx='192px'>
                 {
                     servicesBox?.map((el, i) => (
                         <HStack 
@@ -108,10 +125,34 @@ export default function LandingPage() {
                     ) )
                 }
             </SimpleGrid>
-            <Box w='full' bgColor={'#0566D4'}>
-                <SimpleGrid>
+
+
+            {/* Features Box */}
+            <Box w='full' bgColor={'#0566D4'} p='115px 192px'>
+                <Heading style={{featureHead,fontSize:'36px'}} color='#ffffff'>
+                    Why we are the Best Proxy Providers
+                </Heading>
+                <Text style={{featureText, fontSize:'18px', opacity:0.5}} color='#ffffff' m='10px auto 30px auto' w='465px'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
+                </Text>
+                <SimpleGrid columns={{base:2, lg:4}} rowGap={'27px'} columnGap={'16px'} w='1148px'>
                     {
-                        
+                        featureBox?.map((el, i)=> (
+                            <VStack 
+                                border={'1px solid rgba(255, 255, 255, 0.25)'} 
+                                p='22px 25px' 
+                                borderRadius={'5px'}
+                                w='274px'
+                                h='160px'
+                                alignItems={'flex-start'}
+                            >
+                                <Box w='24px' h='24px'>
+                                    <Image src={el.image} alt={el.image} />
+                                </Box>
+                                <Heading style={{featureHead,fontSize:'20px'}} color='#ffffff'>{el.heading}</Heading>
+                                <Text style={featureText} textAlign={'left'} color='#ffffff'>{el.text}</Text>
+                            </VStack>
+                        ))
                     }
                 </SimpleGrid>
             </Box>
