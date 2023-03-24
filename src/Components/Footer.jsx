@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Button, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
 
 const headingStyle = {
     fontWeight:600,
