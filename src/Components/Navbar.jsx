@@ -19,8 +19,8 @@ const bodyStyle = {
 
 export default function Navbar() {
     return (
-        <Box py={'14px'} borderBottom={'3px solid lightgray'} w={'full'}>
-            <HStack justifyContent={'space-between'} px={'10px'}>
+        <Box p={'14px 10px'} borderBottom={'3px solid lightgray'} w={'full'}>
+            <HStack justifyContent={'space-between'}>
                 <HStack>
                     <Image src={'creativeproxies.png'} alt='logo' />
                     <Heading style={headingStyle}>CreativeProxies</Heading>
