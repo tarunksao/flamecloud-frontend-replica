@@ -4,6 +4,7 @@ import TrustPilotRating from "./LandingPageComponents/TrustPilotRating";
 import ServiceBox from "./LandingPageComponents/ServiceBox";
 import FeatureBox from "./LandingPageComponents/FeatureBox";
 import PricingList from "./LandingPageComponents/PricingList";
+import Resell from "./LandingPageComponents/Resell";
 
 export default function LandingPage() {
     return (
@@ -24,6 +25,9 @@ export default function LandingPage() {
             {/* Price List */}
             <PricingList />
 
+            {/* Resell */}
+            <Resell />
+            
         </Box>
     )
 };
