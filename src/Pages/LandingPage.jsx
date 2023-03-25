@@ -4,18 +4,18 @@ import { featureBox, servicesBox } from "../Data/data";
 
 const headingStyle = {
     fontWeight:600,
-    fontSize:'16px',
+    fontSize:{base:'40px', lg:'16px'},
     color:'#111822',
-    lineHeight:'19px',
+    lineHeight:{base:'48px',lg:'19px'},
     letterSpacing:'-0.02em',
     opacity:'0.5'
 }
 
 const headingStyle2 = {
     fontWeight:600,
-    fontSize:'56px',
+    fontSize:{base:'86px',lg:'56px'},
     color:'#111822',
-    lineHeight:'67px',
+    lineHeight:{base:'103px',lg:'67px'},
     letterSpacing:'-0.02em',
     margin:'3px auto',
     width:'824px'
@@ -40,8 +40,8 @@ const featureHead = {
 
 const featureText = {
     fontWeight:400,
-    fontSize:'14px',
-    lineHeight:'17px',
+    fontSize:{base:'21px',lg:'14px'},
+    lineHeight:{base:'26px',lg:'17px'},
     letterSpacing:'-0.02em',
     opacity:0.5
 }
@@ -102,7 +102,7 @@ export default function LandingPage() {
 
 
             {/* Services Box */}
-            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx='192px'>
+            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx={{base:'90px',lg:'192px'}}>
                 {
                     servicesBox?.map((el, i) => (
                         <HStack 
@@ -128,11 +128,11 @@ export default function LandingPage() {
 
 
             {/* Features Box */}
-            <Box w='full' bgColor={'#0566D4'} p='115px 192px' mb="177px">
-                <Heading style={{featureHead,fontSize:'36px'}} color='#ffffff'>
+            <Box w='full' bgColor={'#0566D4'} p={{base:'166px 90px',lg:'115px 192px'}} mb="177px">
+                <Heading style={{featureHead,fontSize:{base:'55px',lg:'36px'}}} color='#ffffff'>
                     Why we are the Best Proxy Providers
                 </Heading>
-                <Text style={{featureText, fontSize:'18px', opacity:0.5}} color='#ffffff' m='10px auto 30px auto' w='465px'>
+                <Text style={{featureText, fontSize:{base:'27.5px',lg:'18px'}, opacity:0.5}} color='#ffffff' m='10px auto 30px auto' w='465px'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
                 </Text>
                 <SimpleGrid columns={{base:2, lg:4}} rowGap={'27px'} columnGap={'12px'} w='1148px'>
@@ -149,7 +149,7 @@ export default function LandingPage() {
                                 <Box w='24px' h='24px'>
                                     <Image src={el.image} alt={el.image} />
                                 </Box>
-                                <Heading style={{featureHead,fontSize:'20px'}} color='#ffffff'>{el.heading}</Heading>
+                                <Heading style={{featureHead,fontSize:{base:'30.5px',lg:'20px'}}} color='#ffffff'>{el.heading}</Heading>
                                 <Text style={featureText} textAlign={'left'} color='#ffffff'>{el.text}</Text>
                             </VStack>
                         ))
