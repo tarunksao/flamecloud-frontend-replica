@@ -28,3 +28,7 @@ export const featureBox = [
     { id:7, image:trade, heading:'Feature No 7', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.'},
     { id:8, image:flash, heading:'Feature No 8', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.'},
 ]
+
+export const customerReview = [
+    { id:1, }
+]

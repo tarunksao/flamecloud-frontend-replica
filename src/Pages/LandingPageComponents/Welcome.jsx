@@ -3,18 +3,18 @@ import { Box, Button, Heading, Highlight, Image, Text } from "@chakra-ui/react";
 
 const headingStyle = {
     fontWeight:600,
-    fontSize:{base:'40px', lg:'16px'},
+    fontSize:'16px',
     color:'#111822',
-    lineHeight:{base:'48px',lg:'19px'},
+    lineHeight:'19px',
     letterSpacing:'-0.02em',
     opacity:'0.5'
 }
 
 const headingStyle2 = {
     fontWeight:600,
-    fontSize:{base:'86px',lg:'56px'},
+    fontSize:'56px',
     color:'#111822',
-    lineHeight:{base:'103px',lg:'67px'},
+    lineHeight:'67px',
     letterSpacing:'-0.02em',
     margin:'3px auto',
     width:'824px'
