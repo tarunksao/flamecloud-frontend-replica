@@ -38,15 +38,15 @@ export default function TrustPilotRating() {
                     </Box>
                 </HStack>
                 <HStack mx={{base:'9px', xl:'16px'}} gap='0' mt='9px'>
-                    <Text style={headingStyle} fontSize={{base:'11.5px', lg:'16px'}}>
+                    <Text style={headingStyle} fontSize={{base:'11.5px', lg:'15px'}}>
                         Rated 4.5 on 
                     </Text>
                     <Image src={'greenRatingStar.svg'} alt="star" w={{base:'16.8px', xl:'23.23px'}} />
-                    <Text style={headingStyle} fontSize={{base:'11.5px', lg:'16px'}} pt={{base:'1px', xl:'5px'}}>
+                    <Text style={headingStyle} fontSize={{base:'11.5px', lg:'15px'}} pt={{base:'1px', xl:'5px'}}>
                         Trustpilot
                     </Text>
                 </HStack>
-                <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top={{base:'-9.01px', xl:'-12.1px'}} left={{base:'85.5px', xl:'116.8px'}} />
+                <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top={{base:'-9.01px', xl:'-13.1px'}} left={{base:'85.5px', xl:'116.5px'}} />
             </Box>
             <Box w={{base:'315px', xl:'588px'}} border={'1px solid #d9d8d6'} m='36.36px auto'></Box>
 
