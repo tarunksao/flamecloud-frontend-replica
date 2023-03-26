@@ -22,7 +22,7 @@ export default function FeatureBox() {
                 <Text style={{featureText, opacity:0.5}} fontSize={{base:'9.6px',xl:'18px'}} color='#ffffff' m='10px auto 30px auto' w={{base:'260px', xl:'465px'}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
                 </Text>
-                <SimpleGrid columns={{base:2, lg:4}} rowGap={{base:'16.5px', xl:'27px'}} columnGap={{base:'8.5px', xl:'16px'}} w={{base:'315px', xl:'1148px'}}>
+                <SimpleGrid columns={{base:2, lg:4}} rowGap={{base:'16.5px', xl:'27px'}} columnGap={{base:'8.5px', xl:'16px'}} w={{base:'315px', xl:'1152px'}}>
                     {
                         featureBox?.map((el, i)=> (
                             <VStack 

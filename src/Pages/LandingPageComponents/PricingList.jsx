@@ -44,10 +44,10 @@ export default function PricingList() {
                                 >
                                     <Image src={v4} alt='IPv4' w={{base:'12.85px', xl:'24px'}} h={{base:'12.85px', xl:'24px'}} />
                                 </Box>
-                                <Text style={headingStyle} fontSize={{base:'12px', xl:'20px'}} lineHeight={{base:'', xl:'24px'}}>
+                                <Text style={headingStyle} fontSize={{base:'12px', xl:'20px'}} lineHeight={{base:'14.3px', xl:'24px'}}>
                                     IPv4 Proxies
                                 </Text>
-                                <Text style={subHeadingStyle} fontSize={{base:'9.5px', xl:'16px'}} lineHeight={{xl:'19px'}}>
+                                <Text style={subHeadingStyle} fontSize={{base:'9.5px', xl:'16px'}} lineHeight={{base:'11.5px', xl:'19px'}}>
                                     Static/Rotating
                                 </Text>
                             </VStack>
@@ -134,10 +134,10 @@ export default function PricingList() {
                                 >
                                     <Image src={v6} alt='IPv6' w={{base:'12.85px', xl:'24px'}} h={{base:'12.85px', xl:'24px'}} />
                                 </Box>
-                                <Text style={headingStyle} fontSize={{base:'12px', xl:'20px'}}>
+                                <Text style={headingStyle} fontSize={{base:'12px', xl:'20px'}} lineHeight={{base:'14.3px', xl:'24px'}}>
                                     IPv6 Proxies
                                 </Text>
-                                <Text style={subHeadingStyle} fontSize={{base:'9.5px', xl:'16px'}}>
+                                <Text style={subHeadingStyle} fontSize={{base:'9.5px', xl:'16px'}} lineHeight={{base:'11.5px', xl:'19px'}}>
                                     Static/Rotating
                                 </Text>
                             </VStack>
