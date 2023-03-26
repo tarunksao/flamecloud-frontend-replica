@@ -1,5 +1,6 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Box, Button, Heading, Highlight, Image, Text } from "@chakra-ui/react";
+import {Link} from 'react-router-dom';
 
 const headingStyle = {
     fontWeight:600,
@@ -37,20 +38,22 @@ export default function Welcome() {
         <Box m='auto'>
             <Text style={headingStyle} textAlign={'center'}>WELCOME TO CREATIVE PROXIES</Text>
             <Heading style={headingStyle2}>We are the <Highlight query='Fastest' styles={{color:'#077BFF'}}>Fastest</Highlight> and the <Highlight query='Most' styles={{color:'#16D113'}}>Most</Highlight> <Highlight query='Reliable' styles={{color:'#16D113'}}>Reliable</Highlight> Proxy Service since 2020</Heading>
-            <Image src={'blueStar.svg'} pos={'absolute'} top='206px' left='800px' />
-            <Image src={'greenStar.svg'} pos={'absolute'} top='281px' left='525px' />
+            <Image src={'blueStar.svg'} pos={'absolute'} top='193px' left='800px' />
+            <Image src={'greenStar.svg'} pos={'absolute'} top='267px' left='525px' />
             <Text style={bodyStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
-            <Button 
-                w='222px' 
-                h='47px' 
-                p='10px' 
-                borderRadius={'10px'} 
-                bgColor={'#077BFF'} 
-                color='white'
-            >
-                Get Started 
-                <ArrowForwardIcon />
-            </Button>
+            <Link to='/proxyLocation'>
+                <Button 
+                    w='222px' 
+                    h='47px' 
+                    p='10px' 
+                    borderRadius={'10px'} 
+                    bgColor={'#077BFF'} 
+                    color='white'
+                    >
+                    Get Started 
+                    <ArrowForwardIcon />
+                </Button>
+            </Link>
         </Box>
     )
 };

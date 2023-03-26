@@ -4,13 +4,13 @@ import { servicesBox } from "../../Data/data";
 export default function ServiceBox() {
     return (
         <>
-            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx={{base:'90px',lg:'192px'}}>
+            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx={{base:'90px',lg:'192px'}} px='10px'>
                 {
                     servicesBox?.map((el, i) => (
                         <HStack 
                             key={i} 
                             box-sizing= 'border-box'
-                            width='254px'
+                            width='272px'
                             height= '95px'
                             borderRadius= '5px'
                             bgColor={el.bgColor}

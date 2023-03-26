@@ -19,8 +19,8 @@ export default function CustomerReview() {
                 <Highlight query={'Love'} styles={{color:'#16D113'}}>Customers Love our Proxies</Highlight>
             </Text>
             <Text style={{bodyStyle, lineHeight:'22px',opacity:0.5}} w='465px' m='10px auto 34px auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
-            <Flex gap='14px' m='auto' mx='192px' mb='250px'>
-                <VStack w='364px' alignItems={'flex-start'} p='29px 25px' 
+            <Flex gap='20px' m='auto' mx='192px' mb='250px' px='10px'>
+                <VStack w='386px' alignItems={'flex-start'} p='29px 25px' 
                     background= 'rgba(30, 30, 30, 0.01)'
                     border= '1px solid rgba(22, 209, 19, 0.5)'
                     borderRadius= "5px"
@@ -45,7 +45,7 @@ export default function CustomerReview() {
                         </Box>
                     </HStack>
                 </VStack>
-                <VStack w='364px' alignItems={'flex-start'} p='29px 25px' 
+                <VStack w='386px' alignItems={'flex-start'} p='29px 25px' 
                     background= 'rgba(30, 30, 30, 0.01)'
                     border= '1px solid rgba(22, 209, 19, 0.5)'
                     borderRadius= "5px"
@@ -70,7 +70,7 @@ export default function CustomerReview() {
                         </Box>
                     </HStack>
                 </VStack>
-                <VStack w='364px' alignItems={'flex-start'} p='29px 25px' 
+                <VStack w='386px' alignItems={'flex-start'} p='29px 25px' 
                     background= 'rgba(30, 30, 30, 0.01)'
                     border= '1px solid rgba(22, 209, 19, 0.5)'
                     borderRadius= "5px"

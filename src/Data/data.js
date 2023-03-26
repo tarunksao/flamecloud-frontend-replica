@@ -29,6 +29,14 @@ export const featureBox = [
     { id:8, image:flash, heading:'Feature No 8', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.'},
 ]
 
-export const customerReview = [
-    { id:1, }
+export const blogBox = [
+    { id:1, title:'Blog Title appear here', content:'Category name here' },
+    { id:2, title:'Blog Title appear here', content:'Category name here' },
+    { id:3, title:'Blog Title appear here', content:'Category name here' },
+    { id:4, title:'Blog Title appear here', content:'Category name here' },
+    { id:5, title:'Blog Title appear here', content:'Category name here' },
+    { id:6, title:'Blog Title appear here', content:'Category name here' },
+    { id:7, title:'Blog Title appear here', content:'Category name here' },
+    { id:8, title:'Blog Title appear here', content:'Category name here' },
+    { id:9, title:'Blog Title appear here', content:'Category name here' },
 ]

@@ -6,6 +6,7 @@ import FeatureBox from "./LandingPageComponents/FeatureBox";
 import PricingList from "./LandingPageComponents/PricingList";
 import Resell from "./LandingPageComponents/Resell";
 import CustomerReview from "./LandingPageComponents/CustomerReview";
+import Blogs from "./LandingPageComponents/Blogs";
 
 export default function LandingPage() {
     return (
@@ -32,6 +33,9 @@ export default function LandingPage() {
             {/* CustomerReview */}
             <CustomerReview />
 
+            {/* Bolgs Box */}
+            <Blogs />
+            
         </Box>
     )
 };

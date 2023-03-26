@@ -27,7 +27,7 @@ const bodyStyle = {
 
 export default function Footer() {
     return (
-        <HStack p='34px 10px' borderTop={'1px solid #D9D8D6'} h='224px' mb='14px' mx={{base:'90px',lg:'192px'}}>
+        <HStack p='34px 10px' borderTop={'1px solid #D9D8D6'} w='1148px' h='224px' mb='14px' mx={{base:'90px',lg:'192px'}}>
             <VStack justifyContent={'center'} alignItems={'flex-start'} mr='240px'>
                 <HStack>
                     <Image src={'creativeproxies.png'} alt='logo' />
