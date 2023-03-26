@@ -52,12 +52,12 @@ export default function PricingList() {
                                 </Text>
                             </VStack>
                             <VStack w='full' alignItems={'flex-start'} justifyContent={'start'} gap='-5px'>
-                                <Text fontSize={{base:'7px', xl:'12px'}} mb='-10px'>FROM</Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}} mb='-10px'>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>FROM</Text>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>
                                     <Highlight query={'$4.75'} styles={{color:'#077BFF', fontSize:{base:'12px', xl:'20px'}, lineHeight:'24px', fontWeight:600}}>$4.75/day</Highlight>
                                 </Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}} my='-10px'>OR</Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}} mb='-10px'>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>OR</Text>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>
                                     <Highlight query={'$116.75'} styles={{color:'#077BFF', fontSize:{base:'12px', xl:'20px'}, lineHeight:'24px', fontWeight:600}}>$116.75/mo</Highlight>
                                 </Text>
                             </VStack>
@@ -142,12 +142,12 @@ export default function PricingList() {
                                 </Text>
                             </VStack>
                             <VStack w='full' alignItems={'flex-start'}>
-                                <Text fontSize={{base:'7px', xl:'12px'}} mb='-10px'>FROM</Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}} mb='-10px'>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>FROM</Text>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>
                                     <Highlight query={'$4.75'} styles={{color:'#16D113', fontSize:{base:'12px', xl:'20px'}, lineHeight:'24px', fontWeight:600}}>$4.75/day</Highlight>
                                 </Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}} my='-10px'>OR</Text>
-                                <Text fontSize={{base:'7px', xl:'12px'}}>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>OR</Text>
+                                <Text fontSize={{base:'7px', xl:'12px'}} lineHeight={{base:'1px', xl:'3px'}}>
                                     <Highlight query={'$116.75'} styles={{color:'#16D113', fontSize:{base:'12px', xl:'20px'}, lineHeight:'24px', fontWeight:600}}>$116.75/mo</Highlight>
                                 </Text>
                             </VStack>

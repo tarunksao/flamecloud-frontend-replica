@@ -27,7 +27,7 @@ export default function Navbar() {
             top={0} 
             zIndex={100} 
             bgColor={'white'}
-            m='0 auto'
+            m='auto'
         >
             <HStack justifyContent={'start'}>
                 <Link to='/'>
