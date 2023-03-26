@@ -1,4 +1,4 @@
-# CReative Proxies UI
+# Creative Proxies UI
 
 ### About
 - This Project is a UI only project where I have created this UI referring to a Figma Design File.
