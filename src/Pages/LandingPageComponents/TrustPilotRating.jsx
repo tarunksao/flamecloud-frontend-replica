@@ -48,7 +48,7 @@ export default function TrustPilotRating() {
                 </HStack>
                 <Image src={'greenStarMark.svg'} alt='mark on green star' zIndex={2} pos='relative' top={{base:'-9.01px', xl:'-12.1px'}} left={{base:'85.5px', xl:'116.8px'}} />
             </Box>
-            <Box w='588px' border={'1px solid #d9d8d6'} m='36.36px auto'></Box>
+            <Box w={{base:'315px', xl:'588px'}} border={'1px solid #d9d8d6'} m='36.36px auto'></Box>
 
         </>
     )

@@ -10,7 +10,7 @@ import Blogs from "./LandingPageComponents/Blogs";
 
 export default function LandingPage() {
     return (
-        <Box textAlign={'center'} w={{base:'315px',xl:'1148px'}} m='auto' pt={{base:'27px',xl:'95px'}}>
+        <Box textAlign={'center'} w={{base:'378px',xl:'1148px'}} m='auto' pt={{base:'27px',xl:'95px'}}>
             
             <Welcome />
 

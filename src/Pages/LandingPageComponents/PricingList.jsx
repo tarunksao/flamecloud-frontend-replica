@@ -4,9 +4,7 @@ import v6 from '../../Images/v6.svg';
 import { ArrowForwardIcon, CheckIcon } from "@chakra-ui/icons";
 
 const headingStyle = {
-    fontSize:'20px',
     fontWeight:'600',
-    lineHeight:'24px',
     letterSpacing:'-0.02em',
     color:'#111822'
 }
@@ -22,32 +20,33 @@ const subHeadingStyle = {
 export default function PricingList() {
     return (
         <>
-            <Flex w='708px' m='auto' gap='20px' mb='21px'>
+            <Flex flexDir={{base:'column', xl:'row'}} w={{base:'206px', xl:'708px'}} m='auto' gap='20px' mb='21px'>
                     
                     {/* IPv4 Price Box */}
                     <VStack 
-                        w='344px'
-                        h='525px'
+                        w={{base:'206px', xl:'344px'}}
+                        h={{base:'267.34px' ,xl:'525px'}}
                         background= 'rgba(30, 30, 30, 0.01)'
                         border= '1px solid rgba(30, 30, 30, 0.1)'
                         border-radius= '5px'
-                        p='26px 28px'
-                        gap='10px'
+                        p={{base:'15.5px 16.75px', xl:'26px 28px'}}
+                        gap={{base:'5px',xl:'10px'}}
                     >
                         <HStack w='full' gap='60px'>
                             <VStack alignItems={'flex-start'}>
                                 <Box 
                                     background={'linear-gradient(135deg, #2E73E8 0%, #215FDA 100%)'} 
-                                    w='40px' 
-                                    h='40px' 
+                                    w={{base:'21.4px', xl:'40px'}} 
+                                    h={{base:'21.4px', xl:'40px'}} 
                                     borderRadius={'8px'}
                                     display={'flex'}
                                     justifyContent={'center'}
                                     alignItems={'center'}
+                                    p={{base:'4.3px', xl:'8px'}} 
                                 >
-                                    <Image src={v4} alt='IPv4' />
+                                    <Image src={v4} alt='IPv4' w={{base:'12.85px', xl:'24px'}} h={{base:'12.85px', xl:'24px'}} />
                                 </Box>
-                                <Text style={headingStyle}>
+                                <Text style={headingStyle} fontSize={{base:'12px', xl:'20px'}} lineHeight={{base:'', xl:'24px'}}>
                                     IPv4 Proxies
                                 </Text>
                                 <Text style={subHeadingStyle}>

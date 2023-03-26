@@ -4,23 +4,23 @@ import { servicesBox } from "../../Data/data";
 export default function ServiceBox() {
     return (
         <>
-            <SimpleGrid columns={{base:2, lg:4}} gap='16px' mb='139px' mx={{base:'90px',lg:'192px'}} px='10px'>
+            <SimpleGrid w={{base:'315px'}} columns={{base:2, lg:4}} gap={{base:'8.5px', xl:'16px'}} mb='139px' mx={'auto'} px={{base:'0px', xl:'10px'}}>
                 {
                     servicesBox?.map((el, i) => (
                         <HStack 
                             key={i} 
                             box-sizing= 'border-box'
-                            width='272px'
-                            height= '95px'
+                            width={{base:'153px', xl:'272px'}}
+                            height= {{base:'51px', xl:'95px'}}
                             borderRadius= '5px'
                             bgColor={el.bgColor}
                             border={el.border}
-                            p='26px 32px'
+                            p={{base:'14.5px 18.7px', xl:'26px 32px'}}
                         >
-                            <Box display={'flex'} justifyContent={'center'} alignItems={'center'} background={el.background} p='8px' w='40px' h='40px' borderRadius={'8px'}>
-                                <Image src={el.image} alt={el.image} w='24px' h='24px' />
+                            <Box display={'flex'} justifyContent={'center'} alignItems={'center'} background={el.background} p={{base:'4.3px', xl:'8px'}} w={{base:'21.4px', xl:'40px'}} h={{base:'21.4px', xl:'40px'}} borderRadius={'8px'}>
+                                <Image src={el.image} alt={el.image} w={{base:'12.85px', xl:'24px'}} h={{base:'12.85px', xl:'24px'}} />
                             </Box>
-                            <Text textAlign={'left'} w='137px'>
+                            <Text textAlign={'left'} w={{base:'79.5px', xl:'137px'}} fontSize={{base:'9px', xl:'18px'}}>
                                 {el.text}
                             </Text>
                         </HStack>
