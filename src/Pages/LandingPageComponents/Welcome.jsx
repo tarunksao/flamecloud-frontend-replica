@@ -4,31 +4,23 @@ import {Link} from 'react-router-dom';
 
 const headingStyle = {
     fontWeight:600,
-    fontSize:'16px',
     color:'#111822',
-    lineHeight:'19px',
     letterSpacing:'-0.02em',
     opacity:'0.5'
 }
 
 const headingStyle2 = {
     fontWeight:600,
-    fontSize:'56px',
     color:'#111822',
-    lineHeight:'67px',
     letterSpacing:'-0.02em',
     margin:'3px auto',
-    width:'824px'
 }
 
 const bodyStyle = {
     fontWeight:500,
-    fontSize:'22px',
     color:'#111822',
-    lineHeight:'26px',
     letterSpacing:'-0.02em',
     opacity:'0.5',
-    width:'509px',
     margin:'17px auto',
     textAlign:'center'
 }
@@ -36,19 +28,21 @@ const bodyStyle = {
 export default function Welcome() {
     return (
         <Box m='auto'>
-            <Text style={headingStyle} textAlign={'center'}>WELCOME TO CREATIVE PROXIES</Text>
-            <Heading style={headingStyle2}>We are the <Highlight query='Fastest' styles={{color:'#077BFF'}}>Fastest</Highlight> and the <Highlight query='Most' styles={{color:'#16D113'}}>Most</Highlight> <Highlight query='Reliable' styles={{color:'#16D113'}}>Reliable</Highlight> Proxy Service since 2020</Heading>
-            <Image src={'blueStar.svg'} pos={'absolute'} top='193px' left='800px' />
-            <Image src={'greenStar.svg'} pos={'absolute'} top='267px' left='525px' />
-            <Text style={bodyStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
+            <Text style={headingStyle} fontSize={{base:'7px',xl:'16px'}} lineHeight={{base:'8.5px',xl:'19px'}} textAlign={'center'}>WELCOME TO CREATIVE PROXIES</Text>
+            <Heading style={headingStyle2} fontSize={{base:'28px',xl:'56px'}} lineHeight={{base:'30px',xl:'67px'}} width={{base:'315px',xl:'824px'}}>We are the <Highlight query='Fastest' styles={{color:'#077BFF'}}>Fastest</Highlight> and the <Highlight query='Most' styles={{color:'#16D113'}}>Most</Highlight> <Highlight query='Reliable' styles={{color:'#16D113'}}>Reliable</Highlight> Proxy Service since 2020</Heading>
+            <Image src={'blueStar.svg'} pos={'absolute'} top={{base:'95px', xl:'193px'}} left={{base:'266px', xl:'800px'}} w={{base:'12px', xl:''}} />
+            <Image src={'greenStar.svg'} pos={'absolute'} top={{base:'124px', xl:'267px'}} left={{base:'88px', xl:'525px'}} w={{base:'11.5px', xl:''}} transform={'matrix(-1, 0, 0, 1, 0, 0)'} />
+            <Text style={bodyStyle} fontSize={{base:'10px',xl:'22px'}} lineHeight={{base:'12px',xl:'26px'}} width={{base:'226.5px',xl:'509px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.</Text>
             <Link to='/proxyLocation'>
                 <Button 
-                    w='222px' 
-                    h='47px' 
-                    p='10px' 
+                    w={{base:'157px',xl:'223px'}} 
+                    h={{base:'27px',xl:'39px'}} 
+                    p={{base:'7px',xl:'10px'}} 
                     borderRadius={'10px'} 
                     bgColor={'#077BFF'} 
                     color='white'
+                    fontSize={{base:'11px', xl:'16px'}}
+                    mb={{base:'9px'}}
                     >
                     Get Started 
                     <ArrowForwardIcon />
