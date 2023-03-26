@@ -1,4 +1,5 @@
 import { Button, Flex, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const headingStyle = {
     fontWeight:600,
@@ -34,10 +35,12 @@ export default function Footer() {
         >
             <Flex flexDir={{base:'row', xl:'column'}} gap={{base:'10px'}} justifyContent={'center'} alignItems={'flex-start'} mr={{base:'0px', xl:'240px'}}>
                 <VStack mr={{base:'54px'}}>
-                    <HStack>
-                        <Image src={'creativeproxies.png'} alt='logo' />
-                        <Heading style={headingStyle} fontSize={{base:'15.5px',lg:'26px'}} lineHeight={{base:'18.5px',lg:'31px'}}>CreativeProxies</Heading>
-                    </HStack>
+                    <Link to='/'>
+                        <HStack>
+                            <Image src={'creativeproxies.png'} alt='logo' />
+                            <Heading style={headingStyle} fontSize={{base:'15.5px',lg:'26px'}} lineHeight={{base:'18.5px',lg:'31px'}}>CreativeProxies</Heading>
+                        </HStack>
+                    </Link>
                     <Text style={subHeadingStyle} fontSize={{base:'8.5px',lg:'14px'}} pl='11px' w={{base:'126px',xl:'225px'}}>Copyright © 2023 Creative Proxies.
                         All rights reserved.
                     </Text>
