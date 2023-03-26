@@ -4,7 +4,7 @@ import { servicesBox } from "../../Data/data";
 export default function ServiceBox() {
     return (
         <>
-            <SimpleGrid w={{base:'315px'}} columns={{base:2, lg:4}} gap={{base:'8.5px', xl:'16px'}} mb='139px' mx={'auto'} px={{base:'0px', xl:'10px'}}>
+            <SimpleGrid w={{base:'315px', xl:'1148px'}} columns={{base:2, lg:4}} gap={{base:'8.5px', xl:'16px'}} mb='139px' mx={'auto'} px={{base:'0px', xl:'10px'}}>
                 {
                     servicesBox?.map((el, i) => (
                         <HStack 
