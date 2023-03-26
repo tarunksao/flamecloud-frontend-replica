@@ -28,7 +28,7 @@ const blogBodyStyle = {
 export default function Blogs() {
     return (
         <Box
-            w='1148px'
+            w='1152px'
             background= 'linear-gradient(180deg, #F7FAFF 0%, rgba(255, 255, 255, 0) 100%)'
             border= '1px solid rgba(30, 30, 30, 0.1)'
             borderRadius= '5px'

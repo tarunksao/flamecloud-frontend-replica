@@ -21,7 +21,7 @@ export default function Navbar() {
         <Box 
             p={{base:'10px 0px',xl:'14px 10px'}} 
             borderBottom={'3px solid lightgray'} 
-            w={{base:'315px',xl:'1148px'}} 
+            w={{base:'315px',xl:'1152px'}} 
             pos={'sticky'} 
             top={0} 
             zIndex={100} 

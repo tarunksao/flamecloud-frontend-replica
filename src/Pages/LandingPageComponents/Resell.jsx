@@ -24,7 +24,7 @@ export default function Resell() {
             <Box
                 m='auto'
                 mb='180px'
-                w='708px' 
+                w={{base:'206px', xl:'708px'}} 
                 boxSizing= 'border-box' 
                 background= 'rgba(30, 30, 30, 0.01)'
                 border= '1px solid rgba(30, 30, 30, 0.1)'

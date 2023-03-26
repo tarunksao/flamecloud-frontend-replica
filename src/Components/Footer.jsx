@@ -27,7 +27,7 @@ export default function Footer() {
             flexDir={{base:'column', xl:'row'}} 
             p={{base:'24px 0px',xl:'34px 10px'}} 
             borderTop={'1px solid #D9D8D6'} 
-            w={{base:'315px',xl:'1148px'}} 
+            w={{base:'315px',xl:'1152px'}} 
             h={{base:'198px',xl:'224px'}} 
             mb={'14px'} 
             mx={'auto'}

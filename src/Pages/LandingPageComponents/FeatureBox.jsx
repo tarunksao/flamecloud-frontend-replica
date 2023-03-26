@@ -15,7 +15,7 @@ const featureText = {
 export default function FeatureBox() {
     return (
         <>
-            <Box w={'full'} bgColor={'#0566D4'} p={{base:'58px 31.5px', xl:'115px 192px'}} mb={{base:'70px', xl:"177px"}} >
+            <Box w={'full'} bgColor={'#0566D4'} p={{base:'58px 31.5px', xl:'115px 185px'}} mb={{base:'70px', xl:"177px"}} >
                 <Heading style={featureHead} fontSize={{base:'19.5px',xl:'36px'}} color='#ffffff'>
                     Why we are the Best Proxy Providers
                 </Heading>
