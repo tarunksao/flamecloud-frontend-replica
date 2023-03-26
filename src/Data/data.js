@@ -36,7 +36,4 @@ export const blogBox = [
     { id:4, title:'Blog Title appear here', content:'Category name here' },
     { id:5, title:'Blog Title appear here', content:'Category name here' },
     { id:6, title:'Blog Title appear here', content:'Category name here' },
-    { id:7, title:'Blog Title appear here', content:'Category name here' },
-    { id:8, title:'Blog Title appear here', content:'Category name here' },
-    { id:9, title:'Blog Title appear here', content:'Category name here' },
 ]
