@@ -19,7 +19,7 @@ const bodyStyle = {
 export default function Navbar() {
     return (
         <Box 
-            p={'14px 10px'} 
+            p={{base:'10px 0px',xl:'14px 10px'}} 
             borderBottom={'3px solid lightgray'} 
             w={{base:'315px',xl:'1148px'}} 
             pos={'sticky'} 
@@ -29,9 +29,9 @@ export default function Navbar() {
             m='0 auto'
         >
             <HStack justifyContent={'start'}>
-                <HStack mr='31px'>
+                <HStack mr={{base:'44px',xl:'31px'}}>
                     <Image src={'creativeproxies.png'} alt='logo' />
-                    <Heading style={headingStyle} fontSize={{base:'19.25px',xl:'26px'}}>CreativeProxies</Heading>
+                    <Heading style={headingStyle} fontSize={{base:'18px',xl:'26px'}}>CreativeProxies</Heading>
                 </HStack>
                 <HStack display={{base:'none', lg:'flex'}} alignItems={'center'} gap='24px'>
                     <Text style={bodyStyle}>Pricing</Text>
@@ -47,7 +47,7 @@ export default function Navbar() {
                     <Text style={bodyStyle}>Log in</Text>
                 </HStack>
                 <Button 
-                    p='10px 22px' 
+                    p={{base:'8px',xl:'10px 22px'}} 
                     w={{base:'81px', lg:'127px'}} 
                     h={{base:'25px', xl:'39px'}} 
                     borderRadius={'5px'} 

@@ -1,24 +1,20 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, HStack, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 
 const bodyStyle = {
     fontWeight:500,
-    fontSize:'20px',
-    lineHeight:'24px',
     letterSpacing:'-0.02em'
 }
 
 const textStyle = {
     fontWeight:500,
-    fontSize:'18px',
-    lineHeight:'22px',
     letterSpacing:'-0.02em'
 }
 
 export default function ResultSection() {
     return (
-        <Box m='44px auto 99px auto' w='708px'>
-            <Text style={bodyStyle} color='#077BFF'>Your Results</Text>
+        <Box m={{base:'12px auto',xl:'44px auto 99px auto'}} w={{base:'315px',xl:'708px'}}>
+            <Text style={bodyStyle} color='#077BFF' fontSize={{base:'14px',xl:'20px'}} lineHeight={{base:'16.8px',xl:' 24px'}}>Your Results</Text>
             <Box
                 background= 'rgba(217, 216, 214, 0.05)'
                 border= '1px solid rgba(0, 0, 0, 0.25)'
@@ -26,55 +22,75 @@ export default function ResultSection() {
                 mt='17px'
                 mb='40px'
             >
-                <Table>
-                    <Thead
+                <VStack w={{base:'315px',xl:'708px'}}>
+                    <HStack
                         background= 'rgba(0, 0, 0, 0.1)'
                         border= '1px solid rgba(0, 0, 0, 0.25)'
-                        fontSize={'14px'}
-                        lineHeight={'17px'}
+                        fontSize={{base:'10px',xl:'14px'}}
+                        lineHeight={{base:'12px',xl:'17px'}}
                         opacity={0.6}
                         letterSpacing={'-0.02em'}
                         fontWeight={600}
                         color='#111822'
+                        p={{base:'8.5px 13px', xl:'12px 19px' }}
+                        w='full'
+                        gap={{base:'10px', xl:'70px'}}
                     >
-                        <Tr>
-                            <Th>IP</Th>
-                            <Th>PROXY</Th>
-                            <Th>CITY</Th>
-                            <Th>COUNTRY</Th>
-                        </Tr>
-                    </Thead>
-                    <Tbody
-                        fontSize={'14px'}
-                        lineHeight={'17px'}
+                        <Text w={{base:'60px',xl:'100px'}}>IP</Text>
+                        <Text w={{base:'60px',xl:'100px'}}>PROXY</Text>
+                        <Text w={{base:'60px',xl:'100px'}}>CITY</Text>
+                        <Text w={{base:'60px',xl:'100px'}}>COUNTRY</Text>
+                    </HStack>
+                    <HStack
+                        fontSize={{base:'10px',xl:'14px'}}
+                        lineHeight={{base:'12px',xl:'17px'}}
                         letterSpacing={'-0.02em'}
                         fontWeight={500}
                         color='#111822'
+                        p={{base:'8.5px 13px', xl:'12px 19px'}}
+                        w='full'
+                        gap={{base:'10px', xl:'70px'}}
                     >
-                        <Tr>
-                            <Td>8.8.8.8</Td>
-                            <Td>192.168.0.0</Td>
-                            <Td>New York</Td>
-                            <Td>US</Td>
-                        </Tr>
-                        <Tr>
-                            <Td>1.1.1.1</Td>
-                            <Td>192.168.0.0</Td>
-                            <Td>Los Angeles</Td>
-                            <Td>US</Td>
-                        </Tr>
-                        <Tr>
-                            <Td>192.168.1.1</Td>
-                            <Td>192.168.0.0</Td>
-                            <Td>San Diego</Td>
-                            <Td>US</Td>
-                        </Tr>
-                    </Tbody>
-                </Table>
+                            <Text w={{base:'60px',xl:'100px'}}>8.8.8.8</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>192.168.0.0</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>New York</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>US</Text>
+                    </HStack>
+                    <HStack
+                        fontSize={{base:'10px',xl:'14px'}}
+                        lineHeight={{base:'12px',xl:'17px'}}
+                        letterSpacing={'-0.02em'}
+                        fontWeight={500}
+                        color='#111822'
+                        p={{base:'8.5px 13px', xl:'12px 19px'}}
+                        w='full'
+                        gap={{base:'10px', xl:'70px'}}
+                    >
+                            <Text w={{base:'60px',xl:'100px'}}>1.1.1.1</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>192.168.0.0</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>Los Angeles</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>US</Text>
+                    </HStack>
+                    <HStack
+                        fontSize={{base:'10px',xl:'14px'}}
+                        lineHeight={{base:'12px',xl:'17px'}}
+                        letterSpacing={'-0.02em'}
+                        fontWeight={500}
+                        color='#111822'
+                        p={{base:'8.5px 13px', xl:'12px 19px'}}
+                        w='full'
+                        gap={{base:'10px', xl:'70px'}}
+                    >
+                            <Text w={{base:'60px',xl:'100px'}}>192.168.1.1</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>192.168.0.0</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>San Diego</Text>
+                            <Text w={{base:'60px',xl:'100px'}}>US</Text>
+                    </HStack>
+                </VStack>
             </Box>
-            <HStack justifyContent={'center'} gap='15px'>
-                <Text style={textStyle} color='#111822'>Checkout our IPv6 Compatibility Checker</Text>
-                <Text style={textStyle} color='#077BFF'>View Tool <ArrowForwardIcon w='15px' mb='5px' /></Text>
+            <HStack justifyContent={'center'} gap={{base:'10.5px',xl:'15px'}}>
+                <Text style={textStyle} fontSize={{base:'12.5px',xl:'18px'}} lineHeight={{base:'15px',xl:' 22px'}} color='#111822'>Checkout our IPv6 Compatibility Checker</Text>
+                <Text style={textStyle} fontSize={{base:'12.5px',xl:'18px'}} lineHeight={{base:'15px',xl:' 22px'}} color='#077BFF'>View Tool <ArrowForwardIcon w='15px' mb='5px' /></Text>
             </HStack>
         </Box>
     )
