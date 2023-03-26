@@ -30,7 +30,7 @@ export default function FeatureBox() {
                                 p={{base:'12.3px 13.4px', xl:'22px 14px'}} 
                                 borderRadius={'5px'}
                                 w={{base:'153px', xl:'275px'}}
-                                h={{base:'85.7px', xl:'160px'}}
+                                h={{base:'95px', xl:'160px'}}
                                 alignItems={'flex-start'}
                             >
                                 <Box w={{base:'12.8px', xl:'24px'}} h={{base:'12.8px', xl:'24px'}}>
